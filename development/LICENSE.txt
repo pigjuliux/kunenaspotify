@@ -1,0 +1,29 @@
+KunenaSpotify, copyright by 2015 Giulio Erler.
+
+This plugin for Kunena is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version. It is provided for
+educational purposes and is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+
+However, the usage of the "Spotify Widget", is subject to the
+"Spotify Widgets Terms of Use", available here:
+https://developer.spotify.com/technologies/widgets/terms-of-use/
+
+When using and embedding KunenaSpotify into your website, you accept the
+Spotify Widgets Terms of Use.
+
+Moreover, by embedding a Spotify Widget, you agree that Spotify
+can use information collected through the Spotify Widget
+(including information collected through Google Analytics) in accordance
+with Spotify's Privacy Policy, and you shall include complete and
+accurate disclosure to end users as further described in Section V of the
+Widgets Terms of Use. You acknowledge that in order for the Spotify Widgets
+to function properly and to enhance user experience, Spotify places cookies
+and similar technologies (collectively, “Cookies”), and causes third party
+Cookies to be placed, on the browsers of users that visit websites
+that embed Spotify Widgets.

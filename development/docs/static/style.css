@@ -1,0 +1,41 @@
+TABLE
+{
+    margin-left:5%; 
+    margin-right:5%;
+    width:90%;
+    border-radius:5px
+}
+
+TH
+{
+    color:white;
+    background: linear-gradient(to bottom right,  #3c6eb4,  #294172);
+}
+
+.ticket
+{
+    text-align:center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title
+{
+    text-align:center;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.details
+{
+    text-align:justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+H1
+{
+    text-align:center;
+    color: #294172
+}

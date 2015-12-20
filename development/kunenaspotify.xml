@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="0.5" type="plugin" group="kunena" method="upgrade">
+    <name>plg_kunenaspotify</name>
+    <author>Giulio 'juliux' Erler</author>
+    <creationDate>20151218</creationDate>
+    <copyright>Copyright (C) 2015 Giulio Erler.</copyright>
+    <license>GNU General Public License version 3 or later</license>
+    <authorEmail>juliux {DOT} pigface {AT} gmail {DOT} com</authorEmail>
+    <authorUrl>www.pigjuliux.wordpress.com</authorUrl>
+    <version>0.5.0</version>
+    <description>PLG_KUNENASPOTIFY_DESC</description>
+    <files>
+        <folder>images</folder>
+        <filename plugin="kunenaspotify">kunenaspotify.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_kunena_kunenaspotify.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_kunena_kunenaspotify.sys.ini</language>
+    </languages>
+    <config>
+    </config>
+</extension>
