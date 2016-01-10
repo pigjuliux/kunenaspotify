@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="0.5" type="plugin" group="kunena" method="upgrade">
+<extension version="0.6" type="plugin" group="kunena" method="upgrade">
     <name>plg_kunenaspotify</name>
     <author>Giulio 'juliux' Erler</author>
-    <creationDate>20151218</creationDate>
-    <copyright>Copyright (C) 2015 Giulio Erler.</copyright>
+    <creationDate>20160110</creationDate>
+    <copyright>Copyright (C) 2016 Giulio Erler.</copyright>
     <license>GNU General Public License version 3 or later</license>
     <authorEmail>juliux {DOT} pigface {AT} gmail {DOT} com</authorEmail>
     <authorUrl>www.pigjuliux.wordpress.com</authorUrl>

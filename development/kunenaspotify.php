@@ -89,6 +89,17 @@ class plgKunenaKunenaSpotify extends JPlugin
         $bbcode->autolink_disable = 0;
         $config = JPluginHelper::getPlugin('kunena', 'kunenaspotify');
         $config = json_decode($config->params);
+        
+        /* If user pastes the whole link, we mantain only the part actually
+           related to the song.
+        */
+        $last_slash_index = strripos($content, "/");
+        if ($last_slash_index != FALSE) {
+            $song_index = $last_slash_index + 1;
+            $content = substr($content, $song_index);
+        }
+        
+        /* $html contains the final html code which will be rendered.*/
         $html = '<iframe src="https://embed.spotify.com/?uri=spotify:track:'.$content.'" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
         
         return $html;
