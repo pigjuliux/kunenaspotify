@@ -36,16 +36,16 @@ class plgKunenaKunenaSpotify extends JPlugin
             background-image: url(\"" . JURI::base(true) . "/plugins/kunena/kunenaspotify/images/spotify.png\");
         }");
 
-		//Add JS Code for preview
-		$document->addScriptDeclaration("window.addEvent('domready', function() {
-			preview = document.id('kbbcode-preview');
-			preview.addEvent('updated', function(event){
-				MathJax.Hub.Queue(['Typeset',MathJax.Hub,'kbbcode-preview']);
-				document.getElements('.latex').each(function(item, index) {
+        //Add JS Code for preview
+        $document->addScriptDeclaration("window.addEvent('domready', function() {
+            preview = document.id('kbbcode-preview');
+            preview.addEvent('updated', function(event){
+                MathJax.Hub.Queue(['Typeset',MathJax.Hub,'kbbcode-preview']);
+                document.getElements('.latex').each(function(item, index) {
                     item.setStyle('display', '');
                 });
-			});
-		});");
+            });
+        });");
 
     }
 
