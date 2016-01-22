@@ -28,7 +28,7 @@ class plgKunenaKunenaSpotify extends JPlugin
         $btn->addWrapSelectionAction();
         $editor->insertElement($btn, 'after', 'code');
 
-        $url = $this->params->get('mathjax', 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML');
+        $url = $this->params->get('mathjax', 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML');
         $document = JFactory::getDocument();
         $document->addScript($url);
 
@@ -65,7 +65,7 @@ class plgKunenaKunenaSpotify extends JPlugin
                 'plain_end' => "\n")
         );
 
-        $url = $this->params->get('mathjax', 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML');
+        $url = $this->params->get('mathjax', 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML');
 
         $document = JFactory::getDocument();
         $document->addScript($url);
