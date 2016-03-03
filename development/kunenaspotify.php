@@ -28,10 +28,7 @@ class plgKunenaKunenaSpotify extends JPlugin
         $btn->addWrapSelectionAction();
         $editor->insertElement($btn, 'after', 'code');
 
-        $url = $this->params->get('mathjax', 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML');
         $document = JFactory::getDocument();
-        $document->addScript($url);
-
         $document->addStyleDeclaration("#Kunena #kbbcode-toolbar #spotify {
             background-image: url(\"" . JURI::base(true) . "/plugins/kunena/kunenaspotify/images/spotify.png\");
         }");
@@ -46,7 +43,6 @@ class plgKunenaKunenaSpotify extends JPlugin
                 });
             });
         });");
-
     }
 
     public function onKunenaBbcodeConstruct($bbcode)
@@ -65,10 +61,7 @@ class plgKunenaKunenaSpotify extends JPlugin
                 'plain_end' => "\n")
         );
 
-        $url = $this->params->get('mathjax', 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML');
-
         $document = JFactory::getDocument();
-        $document->addScript($url);
         $document->addScriptDeclaration("window.addEvent('domready', function() {
             document.getElements('.latex').each(function(item, index) {
                 item.setStyle('display', '');
@@ -89,7 +82,7 @@ class plgKunenaKunenaSpotify extends JPlugin
         $bbcode->autolink_disable = 0;
         $config = JPluginHelper::getPlugin('kunena', 'kunenaspotify');
         $config = json_decode($config->params);
-        
+
         /* If user pastes the whole link, we mantain only the part actually
            related to the song.
         */
@@ -98,10 +91,10 @@ class plgKunenaKunenaSpotify extends JPlugin
             $song_index = $last_slash_index + 1;
             $content = substr($content, $song_index);
         }
-        
+
         /* $html contains the final html code which will be rendered.*/
         $html = '<iframe src="https://embed.spotify.com/?uri=spotify:track:'.$content.'" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
-        
+
         return $html;
     }
 }
